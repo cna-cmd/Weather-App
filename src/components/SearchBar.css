@@ -1,0 +1,24 @@
+.cnt{
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content:flex-end;
+}
+.itxt{
+    border-radius: 5px;
+    border: 1px solid;
+}
+.ibtn{
+    background-color: #F8F9FA;
+    /* border: 1px solid #2D7843;  */
+    border: 1px solid #D16452;
+    border-radius: 5px;
+    color: #D16452;
+    margin-left: 10px;
+    padding-top: unset;
+}
+.ibtn:hover{
+    background-color: white;
+    color: #D16452;
+    border: 1px solid #D16452;
+}

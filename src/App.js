@@ -7,7 +7,7 @@ export default function App() {
   const [cities, setCities] = useState([]);
 
   function onSearch(ciudad) {
-    const apiKey = process.env.API_KEY_WEATHER;
+    const apiKey = process.env.REACT_APP_KEY_WEATHER;
     fetch(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}&units=metric`)
     .then(r => r.json())
     .then((recurso) => {
@@ -28,12 +28,12 @@ export default function App() {
         //significa que estas intentando agregar un elemento que ya existe
         const cityExists = cities.filter(city => city.id === ciudad.id);
         if(cityExists.length > 0){
-           alert ("La ciudad ya existe");
+           alert ("The city already exists");
         }else {
             setCities(oldCities => [...oldCities, ciudad]);
         }     
       }else {
-        alert("Ciudad no encontrada");
+        alert("City not found");
       }
     });
   }

@@ -3,7 +3,7 @@
 # Weather App
 
 <p>
-   <img src='./screenshot.jpg' />
+   <img src='./screenshotweather.jpg' />
 </p>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

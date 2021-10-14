@@ -1,0 +1,19 @@
+.ciudad {
+    border: 1px solid #989095;
+    border-radius: 7px;
+    margin-top: 30px;
+    padding-top: 15px;
+    width: 18rem;
+    background-color:rgba(177, 166, 172, 0.4);
+    display: inline-block;
+}
+.container {
+    color: #48484A;
+    font-style: oblique;
+}
+.info {
+    color: #4D5B6D;   
+    margin: 15px;
+    font-style: normal;
+    text-align: justify;
+}

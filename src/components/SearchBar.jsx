@@ -22,7 +22,6 @@ export default function SearchBar({ onSearch }) {
       />
       {/* Input tipo botón */}
       <input className="ibtn" type="submit" value="Search" />
-
     </form>
   );
 }

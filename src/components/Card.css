@@ -19,6 +19,7 @@
 }
 .card-title {
   margin-bottom: 15px;
+  color: #48484A;
 }
 
 #closeIcon {
@@ -33,3 +34,8 @@
   padding-top: 0px !important;
   opacity: 1
 }
+
+a:hover {
+  text-decoration: none;
+}
+

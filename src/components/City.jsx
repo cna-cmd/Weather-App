@@ -1,8 +1,10 @@
 import React from 'react';
+import { Link, useHistory } from "react-router-dom";
 import './City.css';
 
-export default function City({city}) {
-  if(!city){
+export default function City({ city }) {
+  let history = useHistory();
+  if (!city) {
     return <div>City not found</div>
   }
   return (
@@ -13,9 +15,20 @@ export default function City({city}) {
           <div>Temperature: {city.temp} ºC</div>
           <div>Clime: {city.weather}</div>
           <div>Wind: {city.wind} km/h</div>
-          <div>Amount of clouds: {city.clouds}</div>
+          <div>Clouds: {city.clouds}</div>
           <div>Latitude: {city.latitud}º</div>
           <div>Longitud: {city.longitud}º</div>
+          <Link to="/">
+             <div className="cards">
+                <button className="btn"
+                  onClick={() => {
+                    history.goBack();
+                  }}
+                >
+                  ✔
+                </button>
+             </div>
+          </Link>
         </div>
       </div>
     </div>
